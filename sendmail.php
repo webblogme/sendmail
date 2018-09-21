@@ -25,7 +25,7 @@ $smtp     = isset($_POST['smtp']) ? $_POST['smtp']        : '';
 $port     = isset($_POST['port']) ? $_POST['port']        : '';
 $message  = isset($_POST['message']) ? $_POST['message']  : '';
 $subject  = isset($_POST['subject']) ? $_POST['subject'] : '';
-$enable_debug=isset($_POST['enable_debug']) ? $_POST['enable_debug'] : '';
+$enable_debug=isset($_POST['debug']) ? $_POST['debug'] : '';
 
 
 /*
