@@ -104,8 +104,25 @@
 				<form action="sendmail.php" method="post" class="form-horizontal">
 					<input type="hidden" name="smtp" value="smtp.mailtrap.io"><!-- Check again with mailtrap -->
 					<input type="hidden" name="port" value="2525"><!-- Check again with mailtrap -->
-					<div class="form-group"><label class="col-md-4 control-label" for="checkboxes">From email</label><div class="col-md-4"><input type="text" value="" name="from" placeholder="@yourwebsite.com" class="form-control input-md"></div></div>
-					<div class="form-group"><label class="col-md-4 control-label" for="checkboxes">Password</label><div class="col-md-4"><input type="password" value="" name="password" placeholder="password" class="form-control input-md"></div></div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="from">From email</label>
+						<div class="col-md-4">
+							<input id="from" name="from" type="text" placeholder="placeholder" class="form-control input-md">
+							<span class="help-block">email from mailtrap e.g. 919ed56ab5asw1cfa7</span>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="password">Password</label>
+						<div class="col-md-4">
+							<input id="password" name="password" type="text" placeholder="placeholder" class="form-control input-md">
+							<span class="help-block">password from mailtrap e.g. e2addf4dsdfe1955b2e2</span>
+						</div>
+					</div>
+
 					<div class="form-group"><label class="col-md-4 control-label" for="checkboxes">To email</label><div class="col-md-4"><input type="text" value="" name="to" placeholder="recipent" class="form-control input-md"></div></div>
 					<div class="form-group"><label class="col-md-4 control-label" for="checkboxes">Subject</label><div class="col-md-4"><input type="text" value="test subject" name="subject" placeholder="your subject" class="form-control input-md"></div></div>
 					<!-- Textarea -->
